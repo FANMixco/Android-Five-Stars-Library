@@ -20,13 +20,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'angtrim.com.sampleapp'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     // Update appcompat library to a version compatible with API level 34
-    implementation 'androidx.appcompat:appcompat:34.2.0' // Update to latest version
+    implementation 'androidx.appcompat:appcompat:1.7.0' // Update to latest version
 
     // Assuming fivestarslibrary is your own library module
     implementation project(':fivestarslibrary')
