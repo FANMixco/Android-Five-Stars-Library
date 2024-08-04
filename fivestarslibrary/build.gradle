@@ -1,17 +1,16 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
 
 group='com.github.Angtrim'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 34
+    buildToolsVersion '34.0.0' // Update to latest compatible version
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion 21 // You might need to adjust this based on your app requirements
+        targetSdkVersion 34
+        versionCode 2
+        versionName "2.0"
     }
     buildTypes {
         release {
@@ -23,6 +22,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:27.1.1'
 
+    // Update androidx dependencies (replace com.android.support with androidx)
+    implementation 'androidx.appcompat:appcompat:34.2.0' // Update to latest version
 }
